@@ -1,0 +1,6 @@
+# Files
+cmd/akslabs/akslabs
+cmd/akslabs/akslabs.exe
+
+# VS Code IDE
+.vscode
