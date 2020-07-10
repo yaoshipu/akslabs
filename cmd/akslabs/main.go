@@ -20,7 +20,7 @@ func main() {
         app := cli.NewApp()
         app.Name = "akslabs"
         app.Usage = "Azure Kubernetes Service Labs"
-        app.Version = fmt.Sprintf("1.0.%s", build)
+        app.Version = fmt.Sprintf("0.1.%s", build)
         app.Flags = []cli.Flag{
                 &cli.StringFlag{
                         Name:    "name",
@@ -154,14 +154,13 @@ func describeLabs(c *cli.Context) error {
         fmt.Println("Please install kubectl")
         fmt.Println("recommanded to create a new resource group for each lab")
         fmt.Println("")
-        fmt.Println("Lab 1 Network")
-        fmt.Println("-------------")
+        fmt.Println("Lab 1 Networking")
+        fmt.Println("----------------")
         fmt.Println("Run 'akslabs -n lab1cluster -g lab1group deploy lab1' to deploy the lab1 cluster.")
-        fmt.Println("Run 'kubectl create deployment whoami --image=containous/whoami' to deploy the pod.")
-        fmt.Println("Run 'kubectl get pods' to list pod.")
-        fmt.Println("Fix any errors.")
-        fmt.Println("Do not create other pods in the cluster of default namespace.")
-        fmt.Println("Run 'akslabs -n lab1cluster -g lab1group validate lab1' to check the results.")
+        fmt.Println("Tasks:")
+        fmt.Println("  Run 'kubectl create deployment whoami --image=containous/whoami' to deploy the pod.")
+        fmt.Println("  Run 'kubectl get pods' to list pod.")
+        fmt.Println("  Run 'akslabs -n lab1cluster -g lab1group validate lab1' to check the results.")
         return nil
 }
 
