@@ -1,7 +1,6 @@
-# Azure Kubernetes ServiceLabs
+# Azure Kubernetes Service Labs
 
-This is a set of scripts and tools use to generate a docker image that will have the l200labs binary used to evaluate your AKS troubleshooting skill.
-
+This is a set of scripts and tools use to generate a lab cluster used to evaluate your AKS troubleshooting skill.
 
 ## prerequisites
 
